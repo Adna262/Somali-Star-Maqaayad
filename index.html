@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somali Star</title>
+    <style>
+        h1{
+            color: rgb(58, 29, 248);
+             text-align:center ;
+             
+       }
+       body{
+        background-color: rgb(150, 187, 243);
+       }
+    
+       
+
+</style>
+</head>
+<body>
+     <h2><img src="images muhiim/IMG-20261101-WA0005.jpg"style = " display:block ; margin: 0 auto; width="200" height="300"> </h2>
+
+      <h1 style="text-align: center;"><b>Somali Restaurant</b></h1>
+    <p style="text-align: center;"><b>Cunto Somali dhab ah, aad u macaan badan ku soo dhawaada Hooyo Star</b></p>
+  <div style="text-align: center;">
+    <p><i><b>Bariis iyo Moos</i></b></p>
+   <img src="images muhiim/Bariis1.jpg "style="width: 350px;border-radius: 15px display: block; margin: 0 auto; "/>br> <br>
+  
+  <div style="text-align: center;">
+    <p><b>Bariis Iyo Sabiib 15 Euro </b></p>
+  <img src="images muhiim/Bariis2.jpg"style="width: 350px; border-radius: 15px display: block; margin: 0 auto; "/>
+ <br> 
+ 
+     <p><b>Pasta Besilico 13 Euro</b></p>
+    <img src="images muhiim/pasta besilico.jpeg"width="350" height="350" alt="pasta" /> <br>
+    <div style="text-align: center;">
+        <P><b> Pasto iyo Suugo 12 Euro</b></P>
+  <img src="images muhiim/pasta iyo suugo.jpg"width="350" height="350" alt="pasta" /> <br>
+
+  <div style="text-align: center;">
+    <p><b>Pasta iyo farmajo 16 Euro</b></p>
+  <img src="images muhiim/Pasta Belbalaar iyo farmajo.jpg"width ="350" height="350"/>
+     
+   <div style="text-align: center;" >
+    <P><b>Soor iyo Calooleey 14 Euro</b></P>
+  <img src="images muhiim/soor iyo calooleey.jpg" width="350" height="350"/>
+
+
+<div style="text-align: center;" >
+    <P><b>Canjeero iyo Suqaar</b></P>
+  <img src="images muhiim/canjeero iyo beer.jpg" width="350" height="350"/>
+
+  
+<div style="text-align: center;" >
+    <P><b>Piza Margerita 18 Euro</b></P>
+  <img src="images muhiim/piza margarita.jpg" width="350" height="350"/>
+
+  <h2>Dalbo Hadda</h2>
+<form onsubmit="dalbo(); return false;">
+  <p>Magacaaga: <input id="magac" type="text" required></p>
+  <p>Dooro Cunto:
+  <select id="cunto">
+    <option>Pasta Besilico - 13 Euro</option>
+    <option>Pasto iyo Suugo - 12 Euro</option>
+    <option>Pasta iyo Farmajo - 16 Euro</option>
+    <option>Soor iyo Calooleey - 14 Euro</option>
+    <option>Piza Margerita - 18 Euro</option>
+  </select>
+  </p>
+  <button type="submit" style="padding:10px; background:green; color:white; font-size:18px;">Dalbo via WhatsApp</button>
+</form>
+
+<script>
+function dalbo() {
+  let m = document.getElementById("magac").value;
+  let c = document.getElementById("cunto").value;
+  let msg = "Salaan Hooyo-Star! Magacaygu waa " + m + ". Waxaan rabaa: " + c;
+  window.open("https://wa.me/31623456789?text=" + encodeURIComponent(msg));
+}
+</script>
+
+    
+  </body>
+</html>
